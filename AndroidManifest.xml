@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.geekhub.andrewsalive"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:installLocation="preferExternal">
+
+    <uses-sdk android:minSdkVersion="8"
+       	 	android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:label="@string/app_name"
+		        android:icon="@drawable/ic_launcher_t"
+		        android:theme="@style/Holo.Theme.Light.DarkActionBar"
+		        android:hardwareAccelerated="true">
+		        <!-- android:name="org.geekhub.andrewsalive.TwitReader" -->
+        
+        <activity android:name="org.geekhub.andrewsalive.activity.TitlesActivity"
+            	android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="org.geekhub.andrewsalive.fragments.TitlesFragment$BroadcastListener"
+          android:label="NetworkConnection">
+  	<intent-filter>
+    	<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+  	</intent-filter>
+	</receiver>
+        
+        <activity android:name="org.geekhub.andrewsalive.activity.DetailsActivity"/>
+        
+        <provider android:name="org.geekhub.andrewsalive.database.ArticlesContentProvider"
+                  android:authorities="org.geekhub.andrewsalive.database"/>
+
+        <activity android:name="org.geekhub.andrewsalive.activity.SharingActivity"/>
+        
+        <activity android:name="org.geekhub.andrewsalive.activity.LikedActivity"/>
+      
+    </application>
+
+</manifest>

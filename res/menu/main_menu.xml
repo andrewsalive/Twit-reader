@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <item android:id="@+id/menu_likes"
+         android:showAsAction="always"
+          android:title="like"          
+          android:icon="@drawable/ic_action_not_like"
+          android:visible="false"/>     
+
+	<item android:id="@+id/all_likes"
+          android:showAsAction="always"
+          android:title="all liked"
+          android:visible="false"/>
+
+    <item android:id="@+id/menu_share"
+          android:showAsAction="always"
+          android:title="Share"
+          android:icon="@drawable/ic_menu_share"
+          android:visible="false">
+   	</item>
+</menu>

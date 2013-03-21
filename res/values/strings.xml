@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TweetReader</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_sharing">SharingActivity</string>
+
+    <string name="app_id">244607979002531</string>
+
+  <string name="like">like</string>
+  <string name="dislike">dislike</string>
+  
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="remove_connection">Are you sure you want to remove this connection?</string>
+    <string name="connect">Connect</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="input_message_hint">Input message</string>
+
+    <string name="share_on_fmt">Share on %1$s</string>
+    <string name="warning_message_fmt">The message is too long for %1$s and will be truncated.</string>
+
+</resources>
+
