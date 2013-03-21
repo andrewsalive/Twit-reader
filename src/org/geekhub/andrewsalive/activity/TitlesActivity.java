@@ -6,7 +6,6 @@ import org.geekhub.andrewsalive.fragments.TitlesFragment;
 import org.geekhub.andrewsalive.helper.ConnectionDetector;
 import android.app.AlertDialog;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +15,6 @@ import android.support.v4.app.FragmentTransaction;
 public class TitlesActivity extends BaseActivity {
 		
     ConnectionDetector cd;
-    final Context context = this;
     
     
 	@Override
@@ -41,7 +39,7 @@ public class TitlesActivity extends BaseActivity {
 	    }	 
 	 
 	 private void pushToFinish(){
-		 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+		 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 	 
 				// Setting Dialog Title
 				alertDialogBuilder.setTitle("Internet Connection Error");

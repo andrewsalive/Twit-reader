@@ -212,28 +212,5 @@ public class TitlesFragment extends BaseFragment{
 	        }
 	        
 	    }
-	    
-		 public static class BroadcastListener extends BroadcastReceiver {
-			 
-	    
-	    		 @Override
-	    		  public void onReceive( Context context, Intent intent )
-	    		  {
-	    		    ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService( Context.CONNECTIVITY_SERVICE );
-	    		    NetworkInfo activeNetInfo = connectivityManager.getActiveNetworkInfo();
-	    		    if(activeNetInfo != null && activeNetInfo.isConnected())
-	    		    {
-//	    		    	instance.loadData();
-	    		    	// WE ARE CONNECTED: DO SOMETHING
-	    		    	Toast.makeText( context, "Connected to : " + activeNetInfo.getTypeName(), Toast.LENGTH_LONG ).show();
-						
-	    		    	
-	    		    }
-	    		    else {
-	    		        // WE ARE NOT: DO SOMETHING ELSE    
-	    		    	Toast.makeText( context, "NO CONNECTION " , Toast.LENGTH_LONG ).show();
-	    		    }
-	    		    
-	    		  }
-	    		}
+
 	}
